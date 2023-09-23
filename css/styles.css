@@ -59,8 +59,20 @@ img {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.header-container {
+    display: flex;
+    gap: 90px;
+}
+.header-naviganion {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
 
 .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 4;
     color: #111;
     font-size: 18px;
     font-weight: 700;
@@ -72,7 +84,11 @@ img {
     font-style: italic;
 }
 
-.header-menu {}
+.header-menu {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
 
 .header-item {}
 
@@ -93,7 +109,10 @@ img {
     color: #dcfd22;
 }
 
-.header-soc {}
+.header-soc {
+    display: flex;
+    align-items: center;
+}
 
 .header-soc-item {}
 
@@ -117,6 +136,10 @@ img {
     margin-bottom: 32px;
     max-width: 484px;
 }
+.hero-buttons {
+    display: flex;
+    align-items: center;
+}
 
 .hero-bue-btn {
     font-family: inherit;
@@ -125,7 +148,12 @@ img {
     font-size: 14px;
     font-weight: 600;
     line-height: normal;
+    margin-right: 14px;
     cursor: pointer;
+    padding: 14px 40px;
+    border-radius: 100px;
+    background-color: #FD9222;
+    border: none;
 }
 
 .hero-bue-btn:hover,
@@ -139,6 +167,9 @@ img {
     font-size: 14px;
     font-weight: 600;
     line-height: normal;
+    padding: 14px 40px;
+    border-radius: 100px;
+    border: 1px solid #FFF;
 }
 .hero-ancher-btn:hover,
 .hero-ancher-btn:focus {
@@ -151,19 +182,25 @@ img {
     font-weight: 500;
     line-height: 1.29;
     letter-spacing: -0.03em;
+    margin-left: auto;
 }
 
 .features {
-background-color: #1E1823;
+    background-color: #1E1823;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.visually-hidden {}
+.features-list {
+    padding-left: 18px;
+    padding-right: 18px;
+    display: flex;
+    gap: 88px;
+}
 
-.features-list {}
-
-.features-item {}
+.features-item {
+    width: calc((100% - 88px * 2) / 3);
+}
 
 .features-subtitle {
     color: #FFF;
@@ -185,15 +222,35 @@ background-color: #1E1823;
 }
 
 .taste-title {
+    max-width: 412px;
+    margin: 0 auto;
     margin-bottom: 50px;
 }
 
-.taste-list {}
+.taste-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
 
-.list {}
-
-.taste-item {}
-
+.taste-item {
+    border-radius: 15px;
+    width: calc((100% - 32px * 3) / 4);
+    padding: 28px 23px;
+}
+.taste-item:nth-child(4n + 1) {
+    background-color: #FD9222;
+}
+.taste-item:nth-child(2n) {
+    border: 1px solid #FD9222;
+    background: #FFF;
+}
+.taste-item:nth-child(4n + 3) {
+    background: #1E1823;
+}    
+.taste-item:nth-child(odd) .taste-subtitle {
+    color: #ffffff;
+}
 .taste-img {
     margin-bottom: 36px;
 }
@@ -212,8 +269,16 @@ background-color: #1E1823;
 .made-title {
     margin-bottom: 50px;
 }
-
+.made-wrap {
+    display: flex;
+    gap: 20px;
+}
 .made-img {}
+
+.made-content {
+    background-color: #ffffff;
+    padding: 32px;
+}
 
 .made-subtitle {
     color: #111;
@@ -246,11 +311,16 @@ background-color: #1E1823;
 .products-title {
     margin-bottom: 50px;
 }
-.products-list {}
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 18px;
+}
 
 .list {}
 
 .products-item {
+    width: calc((100% - 18px * 3) / 4);
     border: 1px solid rgba(17, 17, 17, 0.10);
     background: #FFF;
     border-radius: 15px;
@@ -295,9 +365,15 @@ background-color: #1E1823;
     margin-bottom: 50px;
 }
 
-.sellers-list {}
+.sellers-list {
+    display: flex;
+    gap: 16px;
+}
 
-.sellers-item {}
+
+.sellers-item {
+    flex-basis: calc((100% - 32px) / 3);
+}
 
 .sellers-img {}
 
@@ -327,9 +403,12 @@ background-color: #1E1823;
 
 .loved-list {
     margin-bottom: 50px;
+    display: flex;
+    gap: 28px;
 }
 
 .loved-item {
+    flex-basis: calc((100% - 56px) / 3);
     border-radius: 15px;
     border: 1px solid rgba(17, 17, 17, 0.10);
     background: #FFF;
@@ -365,6 +444,10 @@ background-color: #1E1823;
     background-color: #ffffff;
     display: block;
     margin: 0 auto;
+    border-radius: 100px;
+    border: 1px solid #FD9222;
+    padding: 14px 28px;
+    background-color: transparent;
 }
 .loved-btn:hover, .loved-btn:focus {
     background-color: #fd9222;
