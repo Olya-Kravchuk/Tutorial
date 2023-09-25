@@ -198,7 +198,7 @@ img {
     gap: 88px;
 }
 
-.features-item {
+.features-iten {
     width: calc((100% - 88px * 2) / 3);
 }
 
@@ -233,22 +233,22 @@ img {
     gap: 32px;
 }
 
-.taste-item {
+.taste-iten {
     border-radius: 15px;
     width: calc((100% - 32px * 3) / 4);
     padding: 28px 23px;
 }
-.taste-item:nth-child(4n + 1) {
+.taste-iten:nth-child(4n + 1) {
     background-color: #FD9222;
 }
-.taste-item:nth-child(2n) {
+.taste-iten:nth-child(2n) {
     border: 1px solid #FD9222;
     background: #FFF;
 }
-.taste-item:nth-child(4n + 3) {
+.taste-iten:nth-child(4n + 3) {
     background: #1E1823;
 }    
-.taste-item:nth-child(odd) .taste-subtitle {
+.taste-iten:nth-child(odd) .taste-subtitle {
     color: #ffffff;
 }
 .taste-img {
