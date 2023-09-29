@@ -112,17 +112,43 @@ img {
 .header-soc {
     display: flex;
     align-items: center;
+    gap: 14px;
 }
 
-.header-soc-item {}
+.header-soc-item {
+    width: 40px;
+    height: 40px;
+}
 
-.header-soc-link {}
-
+.header-soc-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-soc-icon {
+    fill: #000000;
+}
+.header-soc-link:hover {
+    border-color: rgba(253, 146, 34, 0.10);
+}
+.header-soc-link:hover .header-soc-icon {
+    fill: #fd9222;
+}
 .hero {
     padding-bottom: 80px;
 }
 .hero-container {
     background-color: rgba(17, 17, 17, 0.60);
+    background-image: linear-gradient(rgba(17, 17, 17, 0.40), 
+    rgba(17, 17, 17, 0.40)), 
+    url(../images/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: 380px 40px 40px 40px;
     border-radius: 30px;
 }
@@ -138,7 +164,7 @@ img {
 }
 .hero-buttons {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .hero-bue-btn {
@@ -183,6 +209,24 @@ img {
     line-height: 1.29;
     letter-spacing: -0.03em;
     margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.hero-booton-btn::after {
+    content: "";
+    width: 38px;
+    height: 38px;
+    background-color: #ffffff;
+    background-image: url(../images/angle-small-left.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-size: 16;
+    transition-duration: 400ms;
+}
+.hero-booton-btn:hover::after {
+    background-size: 22px;
 }
 
 .features {
