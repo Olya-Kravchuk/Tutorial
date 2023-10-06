@@ -363,12 +363,28 @@
             <div class="container">
                 <div class="footer-top">
             <p class="footer-text"><span>Chocolate</span> a delicious cure for a bad day</p>
+            
+            <div class="">
             <p class="footer-subtitle">Social networks</p>
             <ul class="footer-soc-list list">
-                <li class="footer-soc-item"><a class="footer-soc-link link" href="" target="_blank" rel="noopener noreferrer"></a>instagram</li>
-                <li class="footer-soc-item"><a class="footer-soc-link link" href="" target="_blank" rel="noopener noreferrer"></a>facebook</li>
-                <li class="footer-soc-item"><a class="footer-soc-link link" href="" target="_blank" rel="noopener noreferrer"></a>twitter</li>
+                <li class="footer-soc-item"><a class="footer-soc-link link" href="" target="_blank" rel="noopener noreferrer">
+                    <svg class="footer-soc-icon" width="24" height="24">
+                        <use href="./images/icon.svg#icon-facebook"></use>
+                    </svg>
+                </a></li>
+                <li class="footer-soc-item"><a class="footer-soc-link link" href="" target="_blank" rel="noopener noreferrer">
+                    <svg class="footer-soc-icon" width="24" height="24">
+                        <use href="./images/icon.svg#icon-instagram"></use>
+                    </svg>
+                </a></li>
+                <li class="footer-soc-item"><a class="footer-soc-link link" href="" target="_blank" rel="noopener noreferrer">
+                    <svg class="footer-soc-icon" width="24" height="24">
+                        <use href="./images/icon.svg#icon-twitter"></use>
+                    </svg>
+                </a></li>
             </ul>
+            </div>
+            <div class="">
             <p class="footer-subtitle">Contact us</p>
             <address class="footer-address">
                 <ul class="footer-address-list list">
@@ -376,7 +392,9 @@
                     <li class="footer-address-item"><a class="footer-address-link link" href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a></li>
                 </ul>
             </address>
+            </div>
                 </div>
+                <div class="footer-bottom">
             <nav class="footer-navigation">
                 <ul class="footer-menu-list list">
                     <li class="footer-menu-item"><a class="footer-menu-link link" href="">Home</a></li>
@@ -384,9 +402,20 @@
                     <li class="footer-menu-item"><a class="footer-menu-link link" href="">Chocolate is loved</a></li>
                 </ul>
             </nav>
+            <form class="footer-form">
+                <label aria-label="footer input">
+                <input type="email" 
+                name="footer-email" 
+                placeholder="Enter your email"
+                class="footer-form-input"
+                >
+                </label>
+            <button type="submit" class="footer-form-btn">Subscribe</button>
+            </form>
+                </div>
             </div>
         </footer>
-        <div class="backdrop is-open">
+        <div class="backdrop">
             <div class="modal">
                 <button type="button" class="modal-btn">
                     <svg class="modal-btn-icon" width="28" height="28">
@@ -451,6 +480,18 @@
                         <label for="user-text" 
                         class="modal-label">Comment</label>
                         <textarea name="user-text" id="user-text" class="modal-textarea" placeholder="Enter text" ></textarea>
+                    </div>
+                    <div class="modal-field">
+                        <input class="modal-check visually-hidden"
+                        type="checkbox" 
+                        name="terms" 
+                        id="terms">
+                        <label class="check-text" 
+                        for="terms"> <span class="check-text-box">
+                            <svg class="check-text-icon" width="10" height="10">
+                                <use href="./images/icon.svg#icon-checkmark"></use>
+                            </svg>
+                        </span>I accept the terms and conditions of the <a href="">Privacy Policy</a></label>
                     </div>
                     <button type="submit" class="modal-form-btn">Send</button>
                 </form>
