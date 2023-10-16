@@ -44,6 +44,42 @@
                             </svg>
                         </a></li>
                     </ul>
+                    <button type="button" class="menu-open-btn">
+                        0
+                    </button>
+            </div>
+            <div class="mob-menu">
+                <div>
+                <button type="button" class="menu-close-btn">x</button>
+                <ul class="mob-menu-list">
+                    <li class="mob-item">
+                        <a class="mob-menu-link" href="#footer">Chocolate is loved</a>
+                    </li>
+                    <li class="mob-item">
+                        <a class="mob-menu-link" href="">Home</a>
+                    </li>
+                    <li class="mob-item">
+                        <a class="mob-menu-link" href="#made">How it’s made?</a>
+                    </li>
+                </ul>
+                </div>
+                <ul class="mob-soc">
+                    <li class="mob-soc-item"><a class="mob-soc-link" href="" target="_blank" rel="noopener noreferrer">
+                            <svg class="mob-soc-icon" width="24" height="24">
+                                <use href="./images/icon.svg#icon-facebook"></use>
+                            </svg>
+                        </a></li>
+                    <li class="mob-soc-item"><a class="mob-soc-link" href="" target="_blank" rel="noopener noreferrer">
+                            <svg class="mob-soc-icon" width="24" height="24">
+                                <use href="./images/icon.svg#icon-instagram"></use>
+                            </svg>
+                        </a></li>
+                    <li class="mob-soc-item"><a class="mob-soc-link" href="" target="_blank" rel="noopener noreferrer">
+                            <svg class="mob-soc-icon" width="24" height="24">
+                                <use href="./images/icon.svg#icon-twitter"></use>
+                            </svg>
+                        </a></li>
+                </ul>
             </div>
          </header>
         <main>
@@ -147,13 +183,13 @@
                     <div class="container">
                     <h2 class="made-title section-title">How it’s <span>made</span>?</h2>
                     <div class="made-wrap">
-                    <img 
-                    src="./images/made-img.jpg" 
-                    alt="liquid chocolate"
-                    width="600"
-                    height="400"
-                    class="made-img"
-                    />
+                    <picture class="made-picture">
+                        <source src="./images/made-img.jpg 1x, made-img-2x.jpg 2x" media="min-width: 1166px">
+                        <source src="./images/made-img-tab.jpg 1x, made-img-tab-2x.jpg 2x" media="min-width: 768px">
+                        <source src="./images/made-img-mob.jpg 1x, made-img-mob-2x.jpg 2x" media="max-width: 767px">
+                    <img src="./images/made-img.jpg" alt="liquid chocolate" width="614" height="400" class="made-img" />
+                    </picture>
+                    
                     <div class="made-content">
                     <h3 class="made-subtitle">Try our chocolates today and discover the perfect balance of flavor</h3>
                     <ul class="made-list list">
@@ -184,6 +220,7 @@
                     <ul class="products-list list">
                         <li class="products-item">
                             <img 
+                            srcset="./images/products-img-1.jpg 1x, products-img-1-2x.jpg 2x"
                             src="./images/products-img-1.jpg" 
                             alt="orange" 
                             width="230" 
