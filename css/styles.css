@@ -87,6 +87,8 @@ img {
     font-style: italic;
 }
 .logo-icon {
+    width: 21px;
+    height: 21px;
 }
 .header-menu {
     align-items: center;
@@ -1176,6 +1178,35 @@ width: 100%;
     padding: 14px 28px;
 }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+.taste-iten:nth-child(4) {
+        order: 2;
+    }
+
+    .taste-iten:nth-child(2) {
+        order: 3;
+    }
+
+    .taste-iten:nth-child(3) {
+        order: 4;
+    }
+
+    .taste-iten:nth-child(5) {
+        order: 5;
+    }
+
+    .taste-iten:nth-child(6) {
+        order: 6;
+    }
+
+    .taste-iten:nth-child(8) {
+        order: 7;
+    }
+
+    .taste-iten:nth-child(7) {
+        order: 8;
+    }
+}
 
 
 
@@ -1191,6 +1222,10 @@ width: 100%;
 .header-logo {
     font-size: 18px;
     line-height: 1.11;
+}
+.logo-icon {
+    width: 24px;
+    height: 24px;
 }
 .header-naviganion {
     justify-content: space-between;
