@@ -448,7 +448,7 @@
                             but crunchy.</p>
                         </li>
                     </ul>
-                    <button type="button" class="loved-btn">Leave a review</button>
+                    <button type="button" class="loved-btn" data-modal-open>Leave a review</button>
                     </div>
                 </section>
         </main>
@@ -508,9 +508,9 @@
                 </div>
             </div>
         </footer>
-        <div class="backdrop">
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button type="button" class="modal-btn">
+                <button type="button" class="modal-btn" data-modal-close>
                     <svg class="modal-btn-icon" width="28" height="28">
                         <use href="./images/icon.svg#icon-x-close"></use>
                     </svg>
@@ -590,5 +590,6 @@
                 </form>
             </div>
         </div>
+        <script src="./js/modal.js"></script>
 </body>
 </html>

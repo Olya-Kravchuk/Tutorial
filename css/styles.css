@@ -837,26 +837,19 @@ img {
     width: 100%;
     height: 100%;
     background-color: rgba(17, 17, 17, 0.457);
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
     transition: opacity 300ms linear, visibility 300ms linear;
 }
-.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-}
+
 .modal {
-    width: 517px;
-    min-height: 794px;
+    width: 311px;
+    min-height: 622px;
     border-radius: 15px;
     background-color: #FAFAFA;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 40px;
+    padding: 32px 24px;
 }
 .modal-btn {
     background-color: transparent;
@@ -874,18 +867,21 @@ fill: transparent;
 }
 .modal-title {
     text-align: left;
-    max-width: 300px;
-    margin-bottom: 40px;
+    max-width: 255px;
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
 }
 .modal-input {
     width: 100%;
-    height: 68px;
+    height: 46px;
 border-radius: 13px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
     background-color: transparent;
-    padding-left: 62px;
-    padding-right: 24px;
+    padding-left: 43px;
+    padding-right: 18px;
     color: #545e1c;
     font-size: 16;
     outline: transparent;
@@ -911,7 +907,7 @@ border-radius: 13px;
     font-size: 14;
 }
 .modal-form-btn {
-    padding: 14px 40px;
+    padding: 12px 28px;
     color: #FFF;
     font-size: 14px;
     font-weight: 600;
@@ -921,7 +917,7 @@ border-radius: 13px;
     border: none;
 }
 .modal-field {
-    margin-bottom: 18px;
+    margin-bottom: 14px;
 }
 .input-wrap {
     position: relative;
@@ -932,28 +928,30 @@ border-radius: 13px;
     font-size: 14px;
     line-height: normal;
     letter-spacing: -0.02em;
-    margin: 8px;
+    margin: 4px;
 }
 .modal-input {
 
 }
 .modal-icon {
+    width: 18px;
+    height: 18px;
     position: absolute;
     fill: transparent;
     stroke: #404040;
-    left: 24px;
+    left: 18px;
     top: 50%;
     transform: translateY(-50%);
     transition: stroke 300ms linear;
 }
 .modal-textarea {
-width: 100%;
+    width: 100%;
     height: 137px;
     border-radius: 13px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
     background-color: transparent;
-    padding: 22px 24px;
+    padding: 14px 18px;
     color: #545e1c;
     font-size: 16;
     outline: transparent;
@@ -962,20 +960,24 @@ width: 100%;
 }
 .modal-textarea::placeholder {
     color: rgba(64, 64, 64, 0.30);
-    font-size: 18px;
+    font-size: 14px;
     line-height: normal;
     letter-spacing: -0.02em;
 }
 .check-text {
+    width: 231px;
+    height: 32px;
     color: rgba(64, 64, 64, 0.60);
-    font-size: 14px;
+    font-size: 12px;
     line-height: normal;
     letter-spacing: -0.02em;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 .check-text a {
     color: #fd9222;
+    margin-left: 32px;
 }
 .check-text-box {
     display: block;
@@ -1009,7 +1011,6 @@ width: 100%;
     min-width: 768;
     gap: 28px;
 }
-
 
 .header-menu {
     display: flex;
@@ -1177,7 +1178,55 @@ width: 100%;
 
     padding: 14px 28px;
 }
+.modal {
+    width: 517px;
+    min-height: 794px;
+    padding: 40px;
 }
+.modal-title {
+    max-width: 300px;
+    margin-bottom: 40px;
+    margin-bottom: 48px;
+    font-size: 24px;
+    line-height: 1.17;
+}
+.modal-input {
+    height: 68px;
+    padding-left: 62px;
+    padding-right: 24px;
+}
+.modal-form-btn {
+    padding: 14px 40px;
+}
+.modal-field {
+    margin-bottom: 18px;
+}
+.modal-label {
+    margin: 8px;
+}
+.modal-icon {
+    width: 24px;
+    height: 24px;
+    left: 24px;
+}
+.modal-textarea {
+    height: 91px;
+    padding: 22px 24px;
+}
+.modal-textarea::placeholder {
+    font-size: 18px;
+}
+.check-text {
+    font-size: 14px;
+    min-width: 425px;
+    height: 17;
+    flex-wrap: nowrap;
+}
+.check-text a {
+    margin-left: 0;
+}
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 .taste-iten:nth-child(4) {
         order: 2;
@@ -1327,4 +1376,18 @@ background-image: linear-gradient(rgba(17, 17, 17, 0.40),
 .footer-form-btn {
     padding: 17px 32px 18px;
 }
+}
+
+
+
+
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.no-scroll {
+    overflow: hidden;
 }
