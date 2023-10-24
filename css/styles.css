@@ -965,19 +965,20 @@ border-radius: 13px;
     letter-spacing: -0.02em;
 }
 .check-text {
-    width: 231px;
-    height: 32px;
     color: rgba(64, 64, 64, 0.60);
     font-size: 12px;
     line-height: normal;
     letter-spacing: -0.02em;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
+}
+
+.check-text-span {
+    flex-wrap: wrap;
 }
 .check-text a {
     color: #fd9222;
-    margin-left: 32px;
 }
 .check-text-box {
     display: block;
@@ -1222,8 +1223,8 @@ border-radius: 13px;
     height: 17;
     flex-wrap: nowrap;
 }
-.check-text a {
-    margin-left: 0;
+.check-text-span {
+    flex-wrap: nowrap;
 }
 }
 
