@@ -991,6 +991,7 @@ border-radius: 13px;
     align-items: center;
     justify-content: center;
     fill: transparent;
+    flex-shrink: 0;
 }
 .modal-check:checked + .check-text > .check-text-box {
     background-color: #fd9222;
